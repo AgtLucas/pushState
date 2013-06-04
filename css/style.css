@@ -1,0 +1,10 @@
+body {
+    width: 60em;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.main {
+    position: relative;
+    margin-top: 140px;
+    height: 200px;
+}
