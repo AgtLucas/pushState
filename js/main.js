@@ -17,7 +17,9 @@ $(function() {
             $mainContent
                     .find(".wrap")
                     .fadeOut(200, function() {
-                        $mainContent.hide().load(href + ".wrap");
+                        $mainContent.hide().load(href + " .wrap", function() {
+                            $mainContent.fadeIn(200);
+                        });
                     });
         }
 
