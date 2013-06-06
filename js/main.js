@@ -1,13 +1,10 @@
 $(function() {
 
-    var main = $(".main");
+    if(Modernizr.history) {
 
-    $(document).on("click", "a", function() {
-        var href = $("this").attr("href");
-
-        history.pushState({}, '', href);
-        main.load(href + " .main>*");
-        return false;
-    });
+        var newHash      = "",
+            $mainContent = $(".main"),
+            $el;
+    }
 
 });
