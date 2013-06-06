@@ -16,9 +16,9 @@ $(function() {
         function loadContent(href) {
             $mainContent
                     .find(".wrap")
-                    .fadeOut(200, function() {
+                    .fadeOut(1000, function() {
                         $mainContent.hide().load(href + " .wrap", function() {
-                            $mainContent.fadeIn(200);
+                            $mainContent.fadeIn(400);
                         });
                     });
         }
