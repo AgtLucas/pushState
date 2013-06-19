@@ -1,5 +1,9 @@
 (function() {
 
+    var url = location.href;
+    var regex = new RegExp('/[^/]*$');
+    var url = url.replace(regex, '/');
+
     function supports_history_api() {
         return !!(window.history && history.pushState);
     }
@@ -17,10 +21,10 @@
         }, false);
     }
 
-    function changePage(href) {
-        var req = new XMLHttpRequest();
-        req.open("GET",
-            )
-    }
+    // function changePage(href) {
+    //     var req = new XMLHttpRequest();
+    //     req.open("GET",
+    //         )
+    // }
 
 })();
