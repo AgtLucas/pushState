@@ -9,6 +9,18 @@
         addClicker(document.getElementById("about"));
     }
 
-    function
+    function addClicker(link) {
+        link.addEventListener("click", function(e) {
+            changePage(link.href);
+            history.pushState(null, null, link.href);
+            e.preventDefault();
+        }, false);
+    }
+
+    // function changePage(href) {
+    //     var req = new XMLHttpRequest();
+    //     req.open("GET",
+    //         )
+    }
 
 })();
