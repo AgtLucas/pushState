@@ -17,10 +17,10 @@
         }, false);
     }
 
-    // function changePage(href) {
-    //     var req = new XMLHttpRequest();
-    //     req.open("GET",
-    //         )
-    // }
+    function changePage(href) {
+        var req = new XMLHttpRequest();
+        req.open("GET",
+            )
+    }
 
 })();
